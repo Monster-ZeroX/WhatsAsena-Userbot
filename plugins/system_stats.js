@@ -1,8 +1,6 @@
 /* Copyright (C) 2020 Yusuf Usta.
-
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
 WhatsAsena - Yusuf Usta
 Developer & Co-Founder - Phaticusthiccy
 */
@@ -23,10 +21,10 @@ if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```🎭 ᴋaͣvͮiͥ_Yaͣ 🎭's WhatsApp-UserBot is Alive!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*➔ Python Version : * 3.9.4\n*Developer Info:* https://kaviya.net\n*Movie Site:* ' + Config.CHANNEL , MessageType.text);
+            await message.client.sendMessage(message.jid,'```🎭 ᴋaͣvͮiͥ_Yaͣ 🎭\'s Virtual WhatsApp Userbot Is Alive!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Dev :* https://kaviya.net\n*Telegram Channel:* https://t.me/InfinityJE\n*Movie Site:* ' + Config.CHANNEL , MessageType.text);
         }
         else {
-            const pow = '*Powered by WhatsApp Userbot*'
+            const pow = '*Powered by Virtual-WhatsApp-Userbot*'
             const payload = Config.ALIVEMSG
             const status = await message.client.getStatus()
             const ppUrl = await message.client.getProfilePicture() 
@@ -54,7 +52,7 @@ else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```'🎭 ᴋaͣvͮiͥ_Yaͣ 🎭's WhatsApp-UserBot is Alive!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*➔ Python Version : * 3.9.4\n*Developer Info:* https://kaviya.net\n*Movie Site:* ' + Config.CHANNEL, MessageType.text);
+            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 Asena Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Telegram Group:* https://t.me/AsenaSupport\n*Telegram Channel:* https://t.me/asenaremaster\n*Plugin Channel:* ' + Config.CHANNEL, MessageType.text);
         }
         else {
             const pow = '*Powered by WhatsAsena*'
@@ -83,10 +81,10 @@ else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```'🎭 ᴋaͣvͮiͥ_Yaͣ 🎭's WhatsApp-UserBot is Alive!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*➔ Python Version : * 3.9.4 \n*Developer Info:* https://kaviya.net\n*Movie Site:* ' + Config.CHANNEL, MessageType.text);
+            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 Asena Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Telegram Group:* https://t.me/AsenaSupport\n*Telegram Channel:* https://t.me/asenaremaster\n*Plugin Channel:* ' + Config.CHANNEL, MessageType.text);
         }
         else {
-            const pow = '*Powered by WhatsAsena*'
+            const pow = '*Powered by Virtual-WhatsApp-Userbot*'
             const payload = Config.ALIVEMSG
             const status = await message.client.getStatus()
             const ppUrl = await message.client.getProfilePicture() 
